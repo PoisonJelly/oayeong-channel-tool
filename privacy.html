@@ -46,7 +46,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;paddi
   </div>
 </header>
 <main class="wrap">
-  <p class="updated">Last updated: November 5, 2026 · Effective: November 5, 2026</p>
+  <p class="updated">Last updated: November 6, 2026 · Effective: November 6, 2026</p>
   <h1>Privacy Policy</h1>
 
   <p>This policy explains how <strong>오아영 채널 도구 (Oayeong Channel Tool)</strong> ("the tool") accesses, collects, stores, uses, shares and deletes data. The tool is an internal tool for one YouTube channel, <strong>촉이 오아영 ChokA0</strong> (channel ID <code>UCvHOjrz1843NFK7rkyPQ2ug</code>). It is run by the channel's editor ("the operator") on one Windows PC and is not offered to anyone else. The only person who authorizes the tool is the owner of that channel ("the channel owner"). Authorizing the tool means agreeing to this policy.</p>
@@ -93,37 +93,24 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;paddi
     <dt>How long</dt><dd>Kept so the report can show trends. At least every 30 days the operator confirms that the tool is still authorized (each collection makes authorized requests, and the clean-up command warns when the last successful one is older than 30 days). If access has been revoked, the stored data is deleted.</dd>
   </dl>
 
-  <h3>2.5 Public comments on the channel's videos</h3>
-  <dl class="facts">
-    <dt>What</dt><dd>Public comments on the channel's own videos, read with <code>commentThreads.list</code>: comment text, time posted, and like and reply counts. When the operator collects comments to prepare replies, the commenter's display name and the replies are also read.</dd>
-    <dt>Why</dt><dd>To show the channel owner what viewers are saying (the weekly report quotes up to 20 recent comments) and to help the channel reply.</dd>
-    <dt>Where</dt><dd>The same local data folder, and inside the report files made from it.</dd>
-    <dt>How long</dt><dd>Comments are used only to prepare the weekly report and are not kept as records. Comment text, display names and replies stay in the data files and report files for no more than 30 days; an automatic clean-up then deletes them, including quotes in the report's written notes, and keeps only the number of comments. The newest comments are read again for each new report.</dd>
-  </dl>
+  <h3>2.5 Comments and other channels' videos</h3>
+  <p>The tool does not read comment text, commenters' names or details of other channels' videos. Copies collected before November 6, 2026 are deleted within 30 days of collection by an automatic clean-up.</p>
 
-  <h3>2.6 Public details of videos that sent viewers to the channel</h3>
-  <dl class="facts">
-    <dt>What</dt><dd>When YouTube Analytics lists another channel's video as a "suggested video" source of the channel's views, the tool reads that video's public title, channel name, channel ID, publish date, length and view count with <code>videos.list</code>.</dd>
-    <dt>Why</dt><dd>To label those rows in the weekly report, so the channel owner can see next to which videos YouTube suggested her videos.</dd>
-    <dt>Where</dt><dd>The same local data folder and report files.</dd>
-    <dt>How long</dt><dd>No more than 30 days after collection; the same automatic clean-up deletes it.</dd>
-  </dl>
-
-  <h3>2.7 What the tool does not collect</h3>
-  <p>The tool does not collect the channel owner's or viewers' email addresses, contacts, payment details or location, does not upload videos and does not use YouTube search. It does not use this data for advertising, profiling or any purpose other than the two described here: publishing subtitles and translations on the channel's own videos, and reporting to the channel owner.</p>
+  <h3>2.6 What the tool does not collect</h3>
+  <p>The tool does not collect comment text, data about other channels, or the channel owner's or viewers' email addresses, contacts, payment details or location, does not upload videos and does not use YouTube search. It does not use this data for advertising, profiling or any purpose other than the two described here: publishing subtitles and translations on the channel's own videos, and reporting to the channel owner.</p>
 
   <h2>3. How data is used and shared</h2>
   <p>The data is used only by the operator, for the channel owner. It is not sold, rented or traded. It is shared only as follows:</p>
   <ul>
     <li><strong>The channel owner</strong> receives the weekly report by email at her own two email addresses. The operator receives a copy.</li>
     <li><strong>Email services.</strong> Reports are sent from the operator's Gmail account over an encrypted connection, so they are stored by Google (Gmail) and by the email service of each recipient (one Gmail address and one Naver Mail address of the channel owner).</li>
-    <li><strong>Anthropic (Claude).</strong> The operator uses Claude, an AI assistant provided by Anthropic, on the same PC to draft subtitle translations and to write the text of the weekly report. When it does so, the data needed for that task is sent to Anthropic for processing: subtitle text, titles and descriptions, statistics and, when the report summarizes them, recent comments. See <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>.</li>
+    <li><strong>Anthropic (Claude).</strong> The operator uses Claude, an AI assistant provided by Anthropic, on the same PC to draft subtitle translations and to write the text of the weekly report. When it does so, the data needed for that task is sent to Anthropic for processing: subtitle text, titles and descriptions, and statistics. See <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>.</li>
     <li><strong>YouTube.</strong> Subtitles, translated titles and translated descriptions are published on the channel's own videos through the YouTube API.</li>
     <li><strong>When the law requires it.</strong> If a valid legal request requires disclosure.</li>
   </ul>
 
   <h2>4. Where data is stored and how it is protected</h2>
-  <p>Analytics data, statistics and comments, and the reports made from them, are stored only in local folders on the operator's PC and are not synced to cloud storage. The authorization tokens are kept in a separate local folder that is also not synced. The tool has no server and no database of its own. Report emails are sent over an encrypted (SSL) connection.</p>
+  <p>Analytics data and statistics, and the reports made from them, are stored only in local folders on the operator's PC and are not synced to cloud storage. The authorization tokens are kept in a separate local folder that is also not synced. The tool has no server and no database of its own. Report emails are sent over an encrypted (SSL) connection.</p>
 
   <h2>5. Cookies, device storage and ads</h2>
   <p>The tool does not place cookies or read or store information on anyone else's device. It shows no ads and no third-party content. This website uses no cookies, trackers or analytics; the web host may keep standard server access logs.</p>
@@ -146,8 +133,8 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;paddi
     <ul>
       <li>이 도구는 YouTube API 서비스(Data·Analytics·Reporting API)를 씁니다. YouTube 이용약관과 Google 개인정보처리방침이 적용됩니다.</li>
       <li>채널 '촉이 오아영 ChokA0' 하나의 자막·번역 제목·설명 등록과 채널 주인에게 보내는 주간 보고서에만 데이터를 씁니다. 광고·판매·제3자 제공은 없습니다.</li>
-      <li>분석·통계 데이터와 댓글은 운영자 PC의 로컬 폴더에만 저장하고 클라우드에 동기화하지 않습니다. 로그인 토큰도 동기화하지 않는 별도 로컬 폴더에 둡니다.</li>
-      <li>댓글은 보고서를 만들 때만 쓰고 기록으로 남기지 않습니다. 파일 안의 댓글 원문·작성자 이름과 다른 채널 영상 정보는 30일 안에 자동으로 지우고 개수만 남깁니다. 통계는 추이를 보려고 보관하되, 30일마다 승인이 살아 있는지 확인합니다.</li>
+      <li>분석·통계 데이터는 운영자 PC의 로컬 폴더에만 저장하고 클라우드에 동기화하지 않습니다. 로그인 토큰도 동기화하지 않는 별도 로컬 폴더에 둡니다.</li>
+      <li>댓글 원문과 다른 채널 영상 정보는 모으지 않습니다(2026-11-06 이전에 모은 사본은 수집 30일 안에 자동으로 지웁니다). 통계는 추이를 보려고 보관하되, 30일마다 승인이 살아 있는지 확인합니다.</li>
       <li>보고서는 채널 주인의 메일 2곳과 운영자에게만 보냅니다.</li>
       <li>운영자는 번역 초안과 보고서 문장을 쓸 때 AI 도우미 Claude(Anthropic)를 쓰며, 이때 필요한 데이터가 Anthropic에서 처리됩니다.</li>
       <li>권한 해제: Google 보안 설정 페이지. 해제하거나 삭제를 요청하면 7일 안에 저장된 데이터를 지웁니다. 문의: <a href="mailto:jinwlgns2@gmail.com">jinwlgns2@gmail.com</a></li>
