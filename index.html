@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oayeong Channel Tool</title>
+<meta name="description" content="Oayeong Channel Tool is an internal tool for one YouTube channel. It publishes subtitles in 14 languages on the channel's own videos and sends the channel owner a weekly report.">
+<style>
+:root{--text:#2e2e2e;--muted:#5f5f5f;--line:#e3e3e3;--panel:#f5f5f3;--link:#1a5fb4;--bg:#ffffff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;font-size:17px;line-height:1.65;overflow-wrap:break-word}
+.wrap{max-width:46rem;margin:0 auto;padding:0 16px}
+header.site{border-bottom:1px solid var(--line)}
+header.site nav{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 20px;padding:14px 0}
+.brand{font-weight:600;color:var(--text);text-decoration:none;margin-right:auto}
+a{color:var(--link)}
+nav a[aria-current="page"]{color:var(--text);font-weight:600;text-decoration:none}
+main{padding:28px 0 40px}
+.updated{color:var(--muted);font-size:.9rem;margin:0 0 8px}
+h1{font-size:1.9rem;line-height:1.25;margin:0 0 12px}
+h2{font-size:1.25rem;line-height:1.35;margin:2.2em 0 .5em}
+h3{font-size:1.05rem;margin:1.5em 0 .3em}
+p,ul,ol{margin:0 0 1em}
+ul,ol{padding-left:1.3em}
+li{margin:.3em 0}
+code{font-family:ui-monospace,Consolas,"Courier New",monospace;font-size:.88em;background:var(--panel);padding:.1em .3em;border-radius:3px}
+.note{background:var(--panel);border-left:3px solid #9b9b9b;padding:12px 16px;margin:0 0 1.2em}
+.note p:last-child{margin-bottom:0}
+.badge{margin:1.2em 0 0}
+.badge img{display:block;width:252px;max-width:100%;height:auto}
+.ko{border-top:1px solid var(--line);margin-top:2.6em;padding-top:.4em}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;padding:16px 0 32px}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <nav aria-label="Site">
+      <a class="brand" href="index.html">Oayeong Channel Tool</a>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="updated">Last updated: November 5, 2026</p>
+  <h1>Oayeong Channel Tool</h1>
+  <p>An internal tool that helps one YouTube channel publish subtitles, titles and descriptions in 14 languages, and sends the channel owner a weekly report on how the channel is doing.</p>
+
+  <div class="note">
+    <p><strong>Internal tool, not offered to anyone else.</strong> There is no sign-up, download, app or web service. The tool is a set of command-line scripts that the channel's editor (the operator) runs on one Windows PC, for one channel only.</p>
+  </div>
+
+  <h2>The channel</h2>
+  <p>The tool works on one channel: <strong>촉이 오아영 ChokA0</strong> (channel ID <code>UCvHOjrz1843NFK7rkyPQ2ug</code>), a Korean vlog channel. Korean subtitles are part of the video image, so the tool adds subtitle tracks for viewers who do not speak Korean.</p>
+
+  <h2>Who authorized it</h2>
+  <p>The channel owner signed in with her own Google account and authorized the tool. She is the only person who has authorized it. The tool's setup step confirms that the signed-in channel is the channel above. The channel owner can remove the tool's access at any time on the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.</p>
+
+  <h2>What the tool does</h2>
+  <ol>
+    <li><strong>Subtitles.</strong> Adds and replaces caption tracks in 14 languages (en, ja, zh-Hant, zh-Hans, de, fr, es-ES, es-419, it, th, id, pt-BR, ar, tr) on the channel's own videos.</li>
+    <li><strong>Translated titles and descriptions.</strong> Adds the translated title and description of each of the channel's own videos for the same languages.</li>
+    <li><strong>Weekly report.</strong> Builds a report for the channel owner from the channel's YouTube Analytics and YouTube Reporting data, the public view, like, comment and subscriber counts of the channel and its videos, and recent comments on its videos. The report is emailed only to the channel owner and the operator.</li>
+  </ol>
+  <p>The tool uses YouTube API Services: the YouTube Data API, the YouTube Analytics API and the YouTube Reporting API.</p>
+  <div class="badge">
+    <a href="https://www.youtube.com/channel/UCvHOjrz1843NFK7rkyPQ2ug"><img src="developed-with-youtube-sentence-case-dark.png" width="252" height="90" alt="Developed with YouTube"></a>
+  </div>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It does not upload videos and does not search YouTube.</li>
+    <li>It does not act on any other channel.</li>
+    <li>It shows no ads and does not sell, rent or trade any data.</li>
+  </ul>
+
+  <h2>Data</h2>
+  <p>What the tool collects, why, where it is kept and when it is deleted is described in the <a href="privacy.html">Privacy Policy</a>. In short: analytics data, statistics and comments are kept only in a local folder on the operator's PC and are not synced to cloud storage; comment text is deleted within 30 days.</p>
+
+  <h2>Policies</h2>
+  <ul>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms of Service</a></li>
+    <li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></li>
+    <li><a href="http://www.google.com/policies/privacy">Google Privacy Policy</a></li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions or complaints: <a href="mailto:jinwlgns2@gmail.com">jinwlgns2@gmail.com</a></p>
+
+  <section class="ko" lang="ko">
+    <h2>한국어 요약</h2>
+    <p>오아영 채널 도구는 유튜브 채널 '촉이 오아영 ChokA0' 하나만을 위한 내부 도구입니다. 외부에 제공하지 않으며, 채널 편집자(운영자)가 PC 한 대에서 실행합니다. 채널 주인이 본인 Google 계정으로 승인했고, 언제든 Google 보안 설정에서 권한을 해제할 수 있습니다.</p>
+    <p>하는 일은 세 가지입니다. 채널 영상에 14개 언어 자막 등록, 번역 제목·설명 등록, 그리고 채널 주인에게 보내는 주간 보고서입니다. 영상 업로드·검색은 하지 않고, 광고나 데이터 판매도 없습니다. 자세한 내용은 개인정보처리방침과 이용약관을 보세요.</p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">Oayeong Channel Tool · Internal tool for one YouTube channel · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></div>
+</footer>
+</body>
+</html>
